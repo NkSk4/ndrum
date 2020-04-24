@@ -8,3 +8,6 @@ send = Blueprint('send', __name__)
 @cross_origin()
 def download_file(filename):
     return mongo.send_file(filename)
+
+
+
